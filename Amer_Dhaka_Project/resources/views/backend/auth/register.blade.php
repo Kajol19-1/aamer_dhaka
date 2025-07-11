@@ -14,7 +14,7 @@
 <p class="text-danger">{{$message}}</p>
 @enderror
 {!! Form::label('role','Role',['class'=>'mt-2'])!!}
-{!! Form::select('role', [1=>'Admin', 2=>'User'],null, ['class'=>'form-select', 'placeholder'=>'Select your role'])!!}
+{!! Form::select('role', ['Admin'=>'Admin', 'User'=>'User'],null, ['class'=>'form-select', 'placeholder'=>'Select your role'])!!}
 @error('role')
 <p class="text-danger">{{$message}}</p>
 @enderror
